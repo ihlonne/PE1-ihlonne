@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Knitting Casually! Here you can find tips, inspiration and knitting patterns."
+    />
+    <title>Knitting Casually</title>
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./index.mjs"></script>
+  </head>
+  <body>
+    <header class="navigation">
+      <nav class="navbar">
+        <ul class="navbar__left">
+          <li><a href="./blog/">Blog</a></li>
+        </ul>
+        <ul class="navbar__right"></ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero-wrapper flex">
+        <img
+          class="hero-logo"
+          src="./assets/images/white-logo.png"
+          alt="logo"
+        />
+        <a href="/#quote-wrapper" id="arrow-down-btn">
+          <i class="fa-solid fa-angle-down"></i>
+        </a>
+      </div>
+      <section id="quote-wrapper">
+        <div>
+          <h2>
+            Knitting is the art of turning simple yarn into something warm,
+            beautiful, and full of love.
+          </h2>
+        </div>
+      </section>
+
+      <section id="carousel-wrapper">
+        <div>
+          <h3>Newest articles</h3>
+          <div class="carousel__track-wrapper">
+            <div class="loader hidden">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+              <div class="bar4"></div>
+              <div class="bar5"></div>
+              <div class="bar6"></div>
+              <div class="bar7"></div>
+              <div class="bar8"></div>
+              <div class="bar9"></div>
+              <div class="bar10"></div>
+              <div class="bar11"></div>
+              <div class="bar12"></div>
+            </div>
+            <ul class="carousel__track carousel"></ul>
+          </div>
+          <div class="carousel-wrapper__buttons">
+            <div>
+              <button id="button-left">Previous Post</button>
+            </div>
+            <div>
+              <button id="button-right">Next Post</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-blog-post-wrapper">
+        <h3>Featured Posts</h3>
+        <div class="ig-cards-wrapper">
+          <ul>
+            <li>
+              <div class="ig-card">
+                <img
+                  src="https://scontent.fosl3-1.fna.fbcdn.net/v/t1.15752-9/460134230_1106865187470555_5287818902957680285_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_ohc=-t4axc6mUAcQ7kNvgFJhlS5&_nc_ht=scontent.fosl3-1.fna&_nc_gid=Apn6SxQEh-30X7uqwfLLtRM&oh=03_Q7cD1QGvCyOS13vzMQEQXB-mf0ex18HAfthH6lhikSVw6MbLEQ&oe=671E7A5C"
+                  alt="Two skeins of Lang Yarn Cashmere Premium on a wooden plate surrounded by knitting needles, a TV remote and a succulent"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="ig-card">
+                <img
+                  src="https://scontent.fosl3-2.fna.fbcdn.net/v/t1.15752-9/460098357_516377654482838_3439696506756097068_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_ohc=LBQk2K8ULNEQ7kNvgFMYiKV&_nc_ht=scontent.fosl3-2.fna&_nc_gid=AYDZ_pTrRwiXrK_UE6TKUH_&oh=03_Q7cD1QFsgCLTVYfGkT20onP5Q_L3ub2kFpVjV88b7Gs_7TUBYA&oe=671E5D85"
+                  alt="Ongoing project lying on a couch - Moby Sweater by Petiteknit"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="ig-card">
+                <img
+                  src="https://scontent.fosl3-1.fna.fbcdn.net/v/t1.15752-9/455255385_1036305891478281_2784791714025238129_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_ohc=dct-xppDN1kQ7kNvgH9Dmwm&_nc_ht=scontent.fosl3-1.fna&_nc_gid=AYDZ_pTrRwiXrK_UE6TKUH_&oh=03_Q7cD1QH3E7vAjMLSCDxgCcjV_w9idxnRfgcGNrp46jRxl5ZwqQ&oe=671E7098"
+                  alt="Porcelain Sweater in white and blue hanging from a chair"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="ig-card">
+                <img
+                  src="https://scontent.fosl3-1.fna.fbcdn.net/v/t1.15752-9/455250016_526551379731118_1564254203206632395_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_ohc=ycbu_AVgUYQQ7kNvgF82dFU&_nc_ht=scontent.fosl3-1.fna&_nc_gid=AYDZ_pTrRwiXrK_UE6TKUH_&oh=03_Q7cD1QEV5qT3JsLXlMffRrIEVcvtUYdT8z8xhTUyku0HmZAgEg&oe=671E6F76"
+                  alt="Skeins of Hjelholdts Ulspinderi yarn on top of a knitting pattern"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="ig-card">
+                <img
+                  src="https://scontent.fosl3-1.fna.fbcdn.net/v/t1.15752-9/459904605_8755730591111726_5127657102998288787_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=EvA9b3qR0bEQ7kNvgFdCELA&_nc_ht=scontent.fosl3-1.fna&_nc_gid=Apn6SxQEh-30X7uqwfLLtRM&oh=03_Q7cD1QEmZyYhGh35AsC4lhzYahuqe5kq2uvQ3ZqTv6I3qHABEQ&oe=671E770F"
+                  alt="Progress photo of ongoing project - Cumulus Tee by Petiteknit, knitted in mohair yarn"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="ig-card">
+                <img
+                  src="https://scontent.fosl3-1.fna.fbcdn.net/v/t1.15752-9/459759119_495689569948605_3032173655594821179_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=Zl4JbRR6_DsQ7kNvgFmrZDu&_nc_ht=scontent.fosl3-1.fna&_nc_gid=Apn6SxQEh-30X7uqwfLLtRM&oh=03_Q7cD1QGo7YpvBnP7uo9WTsafDT5dcqO1oWHiEzrxk3-asiojbA&oe=671E7A17"
+                  alt="Bundle of skeins of Isager yarn in the color purple"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="ig-card">
+                <img
+                  src="https://scontent.fosl3-1.fna.fbcdn.net/v/t1.15752-9/456453894_422830710226715_5724751591431376115_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=fGa_d2SUjqgQ7kNvgGbcbeg&_nc_ht=scontent.fosl3-1.fna&_nc_gid=ADxnjP7THfO-YmxCK0knGyb&oh=03_Q7cD1QGx4OoGVQZ9BgaGDUcCSyDe2ciojXRAk-d1HJ38CTS2dg&oe=671E6759"
+                  alt="Norwegian classic - Marius sweater in traditional colors"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="ig-card">
+                <img
+                  src="https://scontent.fosl3-2.fna.fbcdn.net/v/t1.15752-9/459810747_1093281128879971_4398056663238709645_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_ohc=zuC-aYoWKWkQ7kNvgHizMJX&_nc_ht=scontent.fosl3-2.fna&_nc_gid=Apn6SxQEh-30X7uqwfLLtRM&oh=03_Q7cD1QH3_dPCcp-3-klH0egBlJ4pM3wJ5ttB2kkSIlJ3Vjzy-w&oe=671E6905"
+                  alt="Ongoing project on the floor - Weekend Sweater by Petiteknit, knitted in Sandnes Garn Børstet Alpakka"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="more-posts-btn-wrapper">
+          <a href="https://www.instagram.com/knittingcasually/">More Posts</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="flex">
+      <img src="./assets/images/white-logo.png" alt="logo" />
+      <div class="footer__links">
+        <a href="./blog/">Blog</a>
+        <a href="./account/login.html">Login</a>
+        <a href="./account/register.html">Register</a>
+      </div>
+    </footer>
+  </body>
+</html>

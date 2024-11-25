@@ -1,0 +1,104 @@
+.blog-article-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 8rem 2rem;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.article-info-wrapper {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.75rem;
+  align-items: center;
+  width: 100%;
+  margin: 3rem 0;
+}
+
+#blogPostShare {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Custom tooltip */
+#blogPostShare::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary-contrast);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  font-size: 12px;
+  font-family: var(--font-main);
+  font-weight: 500;
+  z-index: 1000;
+}
+
+/* Show the tooltip on hover */
+#blogPostShare:hover::after {
+  opacity: 1;
+  pointer-events: none;
+}
+.article-banner {
+  display: flex;
+  background: pink;
+  object-fit: cover;
+  width: 100%;
+  max-height: 450px;
+  overflow: hidden;
+
+  img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+  }
+}
+
+.article-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  p {
+    margin: 2rem 0;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+}
+
+.blog-post-tags-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.blog-post-tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-text);
+  color: #fff;
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+}

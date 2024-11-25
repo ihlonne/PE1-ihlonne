@@ -1,0 +1,51 @@
+@import url("./variables.css");
+
+#login-wrapper,
+#register-wrapper {
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    text-transform: uppercase;
+  }
+
+  img {
+    max-width: 350px;
+  }
+
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .btn {
+    border-radius: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .main-btn {
+    height: 45px;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-contrast);
+    color: var(--footer-bg);
+    outline-color: var(--primary-contrast);
+  }
+
+  .main-btn:hover {
+    background: var(--primary-text);
+    border: 1px solid var(--primary-text);
+    color: var(--primary-bg);
+    transition: 3ms ease;
+  }
+}
